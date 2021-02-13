@@ -49,7 +49,7 @@ export default class Search extends Vue {
 
   async search() {
     const response = await axios.get(
-      this.baseUrl + `/search.json?title=${this.query}`
+      this.baseUrl + `/search.json?title=${this.query}/`
     );
     this.books = await response.data.docs;
   }
