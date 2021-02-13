@@ -43,7 +43,7 @@ import axios from "axios";
 
 @Component
 export default class Search extends Vue {
-  baseUrl = "openlibrary.org";
+  baseUrl = "https://openlibrary.org";
   books = [];
   query = "";
 
